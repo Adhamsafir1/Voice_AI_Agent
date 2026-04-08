@@ -1,0 +1,6 @@
+LiveKit Voice Agent Workshop
+- LiveKit is a platform for building real-time voice, video, and data applications.
+- WebRTC is the core technology under the hood, enabling sub-500ms latency.
+- The voice agent we are building uses Gemini for LLM, Deepgram for STT (Speech-to-Text), and Cartesia for TTS (Text-to-Speech).
+- The agent has a "turn-detector" to prevent barge-ins and awkward interruptions while talking.
+- The default manager agent uses Inworld TTS to demonstrate handoffs in production environments.
