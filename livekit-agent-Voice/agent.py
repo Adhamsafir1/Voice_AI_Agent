@@ -1,4 +1,5 @@
 import logging
+import chromadb
 from livekit.plugins.turn_detector.multilingual import MultilingualModel
 from dotenv import load_dotenv
 from livekit.agents import (
@@ -36,12 +37,24 @@ class Assistant(Agent):
     @function_tool
     async def search_knowledge_base(self, context: RunContext, query: str) -> str:
         """Searches the knowledge base document for answers. Call this immediately when the user asks a factual question."""
-        logger.info("Accessing knowledge base for user query: %s", query)
+        logger.info("Accessing ChromaDB knowledge base for user query: %s", query)
         try:
-            with open("knowledge.txt", "r") as f:
-                return f.read()
-        except FileNotFoundError:
-            return "Knowledge base file is missing."
+            client = chromadb.PersistentClient(path="./.chroma_db")
+            collection = client.get_collection(name="voice_agent_kb")
+            results = collection.query(
+                query_texts=[query],
+                n_results=3
+            )
+            
+            if not results["documents"] or not results["documents"][0]:
+                return "No relevant information found in the knowledge base."
+                
+            # Combine the top results into a single context string
+            context_string = "\n\n".join(results["documents"][0])
+            return f"Context found:\n{context_string}"
+        except Exception as e:
+            logger.error("Error accessing vector database: %s", e)
+            return "Knowledge base database is unavailable or missing."
 
 
 async def entrypoint(ctx: JobContext):
