@@ -1,6 +1,16 @@
-LiveKit Voice Agent Workshop
-- LiveKit is a platform for building real-time voice, video, and data applications.
-- WebRTC is the core technology under the hood, enabling sub-500ms latency.
-- The voice agent we are building uses Gemini for LLM, Deepgram for STT (Speech-to-Text), and Cartesia for TTS (Text-to-Speech).
-- The agent has a "turn-detector" to prevent barge-ins and awkward interruptions while talking.
-- The default manager agent uses Inworld TTS to demonstrate handoffs in production environments.
+# Plant Disease Diagnosis Knowledge Base
+
+## Black Spot Disease (Rose Black Spot)
+- **Symptoms**: Yellow leaves, dark spots (black or dark brown) on the upper sides of leaves. The edges of the spots are often fringed or feathery. Leaves may drop prematurely.
+- **Affected Plants**: Roses and other ornamental plants.
+- **Treatment**: Remove and destroy infected leaves. Ensure good air circulation and avoid overhead watering. Apply fungicides such as neem oil, sulfur, or copper-based sprays.
+
+## Powdery Mildew
+- **Symptoms**: White powdery coating on leaves, stems, and flowers. Leaf curling, stunted growth.
+- **Affected Plants**: Many, including squash, cucumbers, roses.
+- **Treatment**: Improve air circulation, spray with baking soda solution or neem oil.
+
+## Blight (Early / Late Blight)
+- **Symptoms**: Brown lesions with yellow halos on lower leaves. Stem cankers and fruit rot in later stages.
+- **Affected Plants**: Tomatoes, potatoes.
+- **Treatment**: Apply copper fungicides. Ensure crop rotation and remove infected debris.

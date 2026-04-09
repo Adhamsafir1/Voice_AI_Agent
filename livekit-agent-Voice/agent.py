@@ -1,5 +1,4 @@
 import logging
-import chromadb
 from livekit.plugins.turn_detector.multilingual import MultilingualModel
 from dotenv import load_dotenv
 from livekit.agents import (
@@ -23,38 +22,15 @@ logger = logging.getLogger("agent")
 load_dotenv(".env.local")
 
 
-class Assistant(Agent):
-    def __init__(self) -> None:
-        super().__init__(
-            instructions=(
-                "You are a helpful and knowledgeable voice AI assistant. "
-                "Your primary goal is to answer the user's questions accurately based strictly on the knowledge base provided to you. "
-                "If the answer is not in the knowledge base, politely inform the user that you don't know the answer. "
-                "Keep your responses concise and conversational."
-            ),
-        )
+from system_prompt import SYSTEM_PROMPT
+from tools.agent_tools import AgentToolsMixin
 
-    @function_tool
-    async def search_knowledge_base(self, context: RunContext, query: str) -> str:
-        """Searches the knowledge base document for answers. Call this immediately when the user asks a factual question."""
-        logger.info("Accessing ChromaDB knowledge base for user query: %s", query)
-        try:
-            client = chromadb.PersistentClient(path="./.chroma_db")
-            collection = client.get_collection(name="voice_agent_kb")
-            results = collection.query(
-                query_texts=[query],
-                n_results=3
-            )
-            
-            if not results["documents"] or not results["documents"][0]:
-                return "No relevant information found in the knowledge base."
-                
-            # Combine the top results into a single context string
-            context_string = "\n\n".join(results["documents"][0])
-            return f"Context found:\n{context_string}"
-        except Exception as e:
-            logger.error("Error accessing vector database: %s", e)
-            return "Knowledge base database is unavailable or missing."
+class Assistant(Agent, AgentToolsMixin):
+    def __init__(self, room) -> None:
+        super().__init__(
+            instructions=SYSTEM_PROMPT,
+        )
+        self.room = room
 
 
 async def entrypoint(ctx: JobContext):
@@ -97,12 +73,13 @@ async def entrypoint(ctx: JobContext):
             # Try to grab the time it finished speaking
             speaking_time = getattr(last_eou_metrics, "timestamp", getattr(last_eou_metrics, "end_of_utterance_time", ev.created_at))
             delta = ev.created_at - speaking_time
-            logger.info("Time to first audio frame: %sms", delta.total_seconds() * 1000)
+            delta_ms = delta * 1000 if isinstance(delta, (int, float)) else delta.total_seconds() * 1000
+            logger.info("Time to first audio frame: %sms", delta_ms)
 
     
 
     await session.start(
-        agent=Assistant(),
+        agent=Assistant(room=ctx.room),
         room=ctx.room,
         room_input_options=RoomInputOptions(
             noise_cancellation=noise_cancellation.BVC(),
