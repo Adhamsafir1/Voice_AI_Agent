@@ -1,16 +1,135 @@
-# Plant Disease Diagnosis Knowledge Base
+# 🎓 Karpagam Institute of Technology (KIT) – KB
 
-## Black Spot Disease (Rose Black Spot)
-- **Symptoms**: Yellow leaves, dark spots (black or dark brown) on the upper sides of leaves. The edges of the spots are often fringed or feathery. Leaves may drop prematurely.
-- **Affected Plants**: Roses and other ornamental plants.
-- **Treatment**: Remove and destroy infected leaves. Ensure good air circulation and avoid overhead watering. Apply fungicides such as neem oil, sulfur, or copper-based sprays.
+## 🏫 Basic Info
 
-## Powdery Mildew
-- **Symptoms**: White powdery coating on leaves, stems, and flowers. Leaf curling, stunted growth.
-- **Affected Plants**: Many, including squash, cucumbers, roses.
-- **Treatment**: Improve air circulation, spray with baking soda solution or neem oil.
+* இது ஒரு **Engineering College** ஆகும் **and** இது **Coimbatore, Tamil Nadu** ல இருக்கு ([Karpagam Institute of Technology][1])
+* இது **Karpagam Charity Trust** மூலம் நிறுவப்பட்டது ([Karpagam Institute of Technology][2])
+* College **2007 ல establish** செய்யப்பட்டது ([Careers360][3])
+* இது **Anna University affiliated** college ஆகும் ([Careers360][3])
+* **NAAC A++ accreditation** கிடைத்துள்ளது ([Karpagam Institute of Technology][2])
+* Recent ah **Autonomous status** கூட கிடைத்துள்ளது ([Karpagam Institute of Technology][2])
 
-## Blight (Early / Late Blight)
-- **Symptoms**: Brown lesions with yellow halos on lower leaves. Stem cankers and fruit rot in later stages.
-- **Affected Plants**: Tomatoes, potatoes.
-- **Treatment**: Apply copper fungicides. Ensure crop rotation and remove infected debris.
+---
+
+## 🎯 Vision & Goal
+
+இந்த college objective என்னனா:
+
+* எல்லாருக்கும் **quality engineering education** கிடைக்கணும்
+* Students க்கு **technical knowledge + practical skills** develop பண்ணணும் ([Karpagam Institute of Technology][4])
+
+---
+
+## 📚 Courses Offered
+
+### 🔹 UG Courses (B.E / B.Tech)
+
+* **Computer Science and Engineering (CSE)**
+* **Artificial Intelligence & Data Science**
+* **Information Technology (IT)**
+* **Electronics and Communication Engineering (ECE)**
+* **Electrical and Electronics Engineering (EEE)**
+* **Mechanical Engineering** ([Careers360][3])
+
+👉 Different specializations available **and** future career options strong
+
+---
+
+## 🧠 Academics & Learning
+
+* Students க்கு **modern labs** **and** advanced technology facilities இருக்கு ([Karpagam Institute of Technology][5])
+* **Skill development programs** conduct பண்ணப்படுகிறது
+* Students க்கு **project-based learning** encourage பண்ணப்படுகிறது
+* முக்கியமாக:
+
+  * Communication skills
+  * Team work
+  * Problem solving
+
+---
+
+## 🏢 Infrastructure
+
+Campus ல:
+
+* **Computer labs with internet**
+* **Library (books + digital resources)**
+* **Seminar halls**
+* **Hostel facilities**
+* **Transport (bus வசதி)**
+* **Cafeteria**
+
+👉 Overall ah **modern infrastructure** irukku ([Wikipedia][6])
+
+---
+
+## 💼 Placements
+
+* College ல **placement cell** active ah work பண்ணுது
+* Top companies வருது like:
+
+  * Microsoft
+  * Amazon
+  * Infosys
+  * TCS
+  * Wipro ([Wikipedia][6])
+
+👉 Students க்கு **training + interview preparation** kudukkuraanga
+
+---
+
+## 🧪 Research & Innovation
+
+* Students **projects, hackathons** participate பண்ணுறாங்க
+* **Innovation Council** **and** Entrepreneurship activities irukku ([Karpagam Institute of Technology][1])
+* Research based learning encourage பண்ணப்படுகிறது
+
+---
+
+## 🏆 Achievements
+
+* Students **Smart India Hackathon finalist** ஆனாங்க ([Karpagam Institute of Technology][5])
+* Different competitions ல participate பண்ணி awards வாங்குறாங்க
+
+---
+
+## ⚙️ Admission Process
+
+* Admission mostly **TNEA counselling** மூலம் நடக்கும் ([Careers360][3])
+* Eligibility:
+
+  * 12th pass (Science group)
+* Online application fill பண்ணணும்
+
+---
+
+## 🌱 Campus Life
+
+* பல **clubs & activities** இருக்கு:
+
+  * Robotics club
+  * Coding clubs
+  * Cultural events
+* Sports facilities available
+* Students overall development focus பண்ணப்படுகிறது
+
+---
+
+## 📍 Location
+
+* **Coimbatore (NH47 near Eachanari)** ல campus இருக்கு ([Karpagam Institute of Technology][4])
+* நல்ல connectivity இருக்கு
+
+---
+
+# 🔥 Summary (Easy Tanglish)
+
+இந்த college ஒரு **top engineering college**
+👉 நல்ல **faculty + infrastructure**
+👉 strong **placements**
+👉 modern **labs + skills training**
+
+👉 Overall ah **engineering படிக்க நல்ல choice** 👍
+
+
+

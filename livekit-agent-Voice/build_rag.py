@@ -45,7 +45,7 @@ def build_knowledge_base():
         ids=ids
     )
     
-    print("✅ RAG Knowledge Base successfully built!")
+    print("RAG Knowledge Base successfully built!")
 
 if __name__ == "__main__":
     build_knowledge_base()
